@@ -1,0 +1,37 @@
+/* Editor underlines */
+.jpc-issue {
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+}
+.jpc-issue.jpc-error { text-decoration-color: var(--color-red); }
+.jpc-issue.jpc-warning { text-decoration-color: var(--color-orange); }
+.jpc-issue.jpc-info { text-decoration-color: var(--color-blue); }
+
+/* Issues panel */
+.jpc-panel { padding: var(--size-4-2); }
+.jpc-header { display: flex; flex-direction: column; gap: var(--size-4-1); margin-bottom: var(--size-4-3); }
+.jpc-file { font-weight: var(--font-semibold); }
+.jpc-summary, .jpc-empty { color: var(--text-muted); font-size: var(--font-ui-small); }
+.jpc-list { display: flex; flex-direction: column; gap: var(--size-4-2); }
+.jpc-item {
+	position: relative;
+	padding: var(--size-4-2) var(--size-4-3);
+	border-radius: var(--radius-s);
+	border-left: 3px solid var(--color-blue);
+	background: var(--background-secondary);
+	cursor: pointer;
+}
+.jpc-item:hover { background: var(--background-modifier-hover); }
+.jpc-item-warning { border-left-color: var(--color-orange); }
+.jpc-item-error { border-left-color: var(--color-red); }
+.jpc-item-top { display: flex; justify-content: space-between; font-size: var(--font-ui-smaller); color: var(--text-muted); }
+.jpc-rule { font-weight: var(--font-semibold); color: var(--text-normal); }
+.jpc-excerpt { margin: var(--size-4-1) 0; font-size: var(--font-ui-small); word-break: break-all; }
+.jpc-hit { background: var(--text-highlight-bg); border-radius: 2px; }
+.jpc-arrow { color: var(--text-faint); }
+.jpc-replacement { color: var(--color-green); font-weight: var(--font-semibold); }
+.jpc-message { font-size: var(--font-ui-smaller); color: var(--text-muted); padding-right: 3.5em; }
+.jpc-fix { position: absolute; right: var(--size-4-2); bottom: var(--size-4-2); font-size: var(--font-ui-smaller); }
+.jpc-status { cursor: pointer; }

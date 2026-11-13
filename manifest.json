@@ -1,0 +1,10 @@
+{
+  "id": "japanese-prose-checker",
+  "name": "Japanese Prose Checker",
+  "version": "0.1.0",
+  "minAppVersion": "1.7.2",
+  "description": "Check Japanese writing for ra-nuki words, inconsistent spellings, redundant phrases, punctuation and novel-manuscript conventions, with one-click fixes.",
+  "author": "sutorimasomurie-afk",
+  "isDesktopOnly": false,
+  "authorUrl": "https://github.com/sutorimasomurie-afk"
+}
